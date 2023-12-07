@@ -3,7 +3,12 @@
 
 ## Introduction
 
-This documentation provides an overview of the implementation of a simple turn-based Tic Tac Toe game. The application is built using JavaScript and React, with a server-side component written in Node.js using Express. The game includes features such as a game creation screen, a list of games screen, and an actual game screen. Additionally, the application employs a basic AI component for the computer player using OpenAI's GPT (Generative Pre-trained Transformer).
+This documentation provides an overview of the implementation of a simple turn-based Tic Tac Toe game. The application is built using JavaScript and React, with a server-side component written in Node.js using Express. The game includes features such as a game creation screen, a list of games screen, and an actual game screen. Additionally, the application employs a basic AI component for the computer player using OpenAI's GPT (Generative Pre-trained Transformer). 
+
+##Uncompleted Parts
+
+Sometimes assistant is not working well and changing places of X and Y. In these times my win/lose functions is not working. Also when you refresh the page current game recording
+as a draw. Beside the css, I narrowed my scope on bonus and backend parts.
 
 ## Table of Contents
 
