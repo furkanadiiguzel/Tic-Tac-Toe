@@ -58,22 +58,35 @@ const TicTacToe = ({ bgColor, boardSize }) => {
     if (!gameOver && board[index] === '' && currentPlayer === 'X') {
       const newBoard = [...board];
       newBoard[index] = currentPlayer;
-
+  
       setBoard(newBoard);
-
+  
       const winner = calculateWinner(newBoard);
       if (winner || newBoard.every((square) => square !== '')) {
         setGameOver(true);
         setWinner(winner);
         updateGameHistory(winner);
+  
+        // Check if the game ended in a tie
+        if (winner === 'Draw') {
+          // Reset the game after a brief delay
+          
+            setBoard(initialBoard);
+            setCurrentPlayer('X');
+            setCurrentTurn('X');
+            setGameOver(false);
+            setWinner('');
+          
+        }
+  
         return; // Stop the game
       }
-
+  
       setCurrentPlayer('O');
       setCurrentTurn('O');
     }
   };
-
+  
   useEffect(() => {
     const makeAssistantMove = async () => {
       console.log('Making assistant move...');
