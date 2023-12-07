@@ -1,0 +1,54 @@
+/* Center the game board in the middle of the page */
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 120px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px; /* Adjust the font size as needed */
+  margin: 3px; /* Add margin to create space between squares */
+  cursor: pointer;
+  border-radius: 10px; /* Adjust border-radius to make corners less sharp */
+}
+
+/* Add dynamic background color based on the bgColor prop */
+.square:hover {
+  background-color: lightyellow;
+}
+
+.game-over .square {
+  cursor: default;
+}
+
+.game-over .square:hover {
+  background-color: inherit;
+}
+.current-turn {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.game-result {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff5722; /* Change color as needed */
+}

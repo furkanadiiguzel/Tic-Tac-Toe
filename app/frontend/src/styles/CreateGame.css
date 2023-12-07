@@ -1,0 +1,63 @@
+/* CreateGame.css */
+
+.create-game-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .create-game-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .create-game-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .create-game-container select,
+  .create-game-container input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .create-game-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-game-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-game-container h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .create-game-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .create-game-container li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
