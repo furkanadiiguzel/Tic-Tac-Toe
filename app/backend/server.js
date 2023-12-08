@@ -19,7 +19,7 @@ app.use(cors()); // Enable CORS for all routes
 // Initialize OpenAI
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "YOUR_API_KEY",
 });
 
 let threadId = null;
@@ -49,7 +49,7 @@ async function communicateWithGPT(message) {
 
   // Run GPT
   const run = await openai.beta.threads.runs.create(threadId, {
-    assistant_id: "asst_TB5XsLZb5FooIHAbgX9sUazq",
+    assistant_id: "YOUR_ASSISTANT_ID",
   });
 
   // Wait for run completion
