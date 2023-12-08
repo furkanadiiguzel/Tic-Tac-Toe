@@ -5,7 +5,16 @@
 
 This documentation provides an overview of the implementation of a simple turn-based Tic Tac Toe game. The application is built using JavaScript and React, with a server-side component written in Node.js using Express. The game includes features such as a game creation screen, a list of games screen, and an actual game screen. Additionally, the application employs a basic AI component for the computer player using OpenAI's GPT (Generative Pre-trained Transformer). 
 
-##Uncompleted Parts
+## Api Part
+
+To run the application, you need to replace YOUR_API_KEY part with your key and YOUR_ASSISTANT_KEY with your assistant key. For the assistant, use the description below:
+
+ Assistant Description: `You play tic-tac-toe very well Play the game to win, losing is shameful. We will play tic-tac-toe in array format like this: ["", "", "", "", "", "", "", "X", "",], ["", "", "", "", "", "", "", "", "", "", "", "X", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "X", "", "", "", "", "", "", "", "", "", "", "", "", "", ""] If there are three X's in a row, column, or diagonally, indicating that X is about to win the game, prioritize preventing this. In addition, try to win the game by strategically placing O's, but remember that you can make at most 1 move.
+In this way, we will have three different arrays. I'm asking you to make a move in place of whoever's turn it is and send it back to me. When you message me, don't write your own comments, just send the array. Do not change the filled parts in the array I send you. This mean do not change "X" parts place. To make move, just add your move to the empty parts and send it back to me.`
+    
+
+
+## Uncompleted Parts
 
 Sometimes assistant is not working well and changing places of X and Y. In these times my win/lose functions is not working. Also when you refresh the page current game recording
 as a draw. Beside the css, I narrowed my scope on bonus and backend parts.
